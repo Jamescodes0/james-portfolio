@@ -1,0 +1,10 @@
+.favicon {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
