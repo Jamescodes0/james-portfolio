@@ -1,49 +1,93 @@
 .container {
-    display: flex;
-    gap: 100px;   
-}
-
-.textContainer {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.title {
-    font-size: 96px;
-}
-
-.desc {
-    font-size: 20px;
-}
-
-.buttons {
-    display: flex;
-    gap: 20px;
-}
-
-.button {
-    padding: 20px;
-    min-width: 120px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-}
-
-.button:first-child {
-    background-color: var(--btn);
-    color: var(--text)
-}
-
-.brands {
-    width: 500px;
-    height: 50px;
-    position: relative;
-    filter: grayscale(1);
+  min-height: 80vh;
+  display: flex;
+  gap: 100px;
+  position: relative;
 }
 
 .imgContainer {
-    flex: 1;
-    position: relative;
+  flex: 1;
+  position: relative;
+  min-width: 950px;
+  flex-grow: 2;
+  flex-shrink: 0;
+  position: relative;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.textContainer {
+  margin-top: 250px;
+  flex: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.title {
+  font-size: 75px;
+}
+
+.desc {
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  padding: 20px;
+  min-width: 120px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 15px;
+}
+
+.button:first-child {
+  background-color: var(--btn);
+  color: var(--text);
+}
+
+.brands {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  filter: grayscale(1);
+  margin-top: 100px;
+}
+
+.imgContainer {
+  flex: 1;
+  position: relative;
+}
+
+.heroImg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.interactiveContainer {
+  min-height: 80vh;
+  display: flex;
+  gap: 100px;
+  position: relative;
+}
+
+.secondTextContainer {
+  margin-top: 250px;
+  flex: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
