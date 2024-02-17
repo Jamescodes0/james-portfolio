@@ -28,6 +28,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  margin-top: 20px;
 }
 
 .box {
@@ -42,8 +43,24 @@
 .imgContainer {
   flex: 1;
   position: relative;
+  height: 600px;
 }
 
 .img {
-  object-fit: contain;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .boxes {
+    flex-direction: column;
+    gap: 50px;
+  }
 }

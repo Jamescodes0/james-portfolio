@@ -8,12 +8,13 @@ const About = () => {
         <h2 className={styles.subtitle}> About</h2>
         <h1 className={styles.title}> James Ho </h1>
         <p className={styles.desc}>
-          is simply dummy text of the printing and typesetting industry. Lorem
-          Ipsum has been the industry's standard dummy text ever since the
-          1500s, when an unknown printer took a galley of type and scrambled it
-          to make a type specimen book. It has survived not only five centuries,
-          but also the leap into electronic typesetting, remaining essentially
-          unchanged
+          As a software engineer, I bring a diverse skill set and a passion for
+          innovation to every project I undertake. With proficiency in languages
+          such as Python, JavaScript, and SQL, along with experience in
+          frameworks like React.js and Next.js and .NET, I thrive on creating
+          efficient solutions. Beyond software development, I find joy in
+          hobbies such as hitting the gym or exploring scenic trails while
+          hiking with my Husky and wife.
         </p>
         <div className={styles.boxes}>
           <div className={styles.box}>
@@ -21,7 +22,7 @@ const About = () => {
             <p>Years of experience</p>
           </div>
           <div className={styles.box}>
-            <h1> 4+ </h1>
+            <h1> 5+ </h1>
             <p>Frameworks learned</p>
           </div>
           <div className={styles.box}>
@@ -32,7 +33,7 @@ const About = () => {
       </div>
       <div className={styles.imgContainer}>
         <Image
-          src="/about.png"
+          src="/headshot.jpg"
           alt="Picture of James"
           fill
           className={styles.img}

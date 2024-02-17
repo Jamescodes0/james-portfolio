@@ -7,9 +7,9 @@ const Home = () => {
     <>
       <div className={styles.container}>
         <div className={styles.textContainer}>
-          <h1 className={styles.title}>James Ho.</h1>
+          <h1 className={styles.title}>James Ho</h1>
           <p className={styles.desc}>
-            Software Engineer is a placeholder for something.
+            SOFTWARE ENGINEER, SPECIALIZING IN FRONT & BACK END DEVELOPMENT
           </p>
           <div className={styles.buttons}>
             <Link href="/portfolio">
@@ -47,10 +47,6 @@ const Home = () => {
           <p className={styles.desc}>
             Interactive is a placeholder for something.
           </p>
-          <div className={styles.buttons}>
-            <button className={styles.button}>Portfolio</button>
-            <button className={styles.button}>Contact</button>
-          </div>
           <div className={styles.brands}>
             <Image
               src="/linkedin.png"
