@@ -1,7 +1,7 @@
 import styles from "./singlePost.module.css";
 import Image from "next/image";
 
-const SinglePostPage = () => {
+const SinglePortfolioPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imgContainer}>
@@ -42,4 +42,4 @@ const SinglePostPage = () => {
   );
 };
 
-export default SinglePostPage;
+export default SinglePortfolioPage;

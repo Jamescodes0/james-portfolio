@@ -22,10 +22,6 @@ const links = [
     title: "Contact",
     path: "/contact",
   },
-  {
-    title: "Blog",
-    path: "/blog",
-  },
 ];
 
 const Links = () => {
