@@ -12,6 +12,7 @@
 
 .menuButton,
 .mobileLinks {
+  z-index: 1000;
   display: none;
 }
 
@@ -26,12 +27,12 @@
   }
 
   .mobileLinks {
-    position: absolute;
+    position: fixed;
     top: 100px;
     right: 0;
     width: 50%;
     height: calc(100vh - 100px);
-    background-color: var(--btn);
+    background-color: var(--bg);
     display: flex;
     flex-direction: column;
     align-items: center;

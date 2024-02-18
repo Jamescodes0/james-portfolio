@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./portfolioCard.module.css";
 import Link from "next/link";
 
-const PostCard = () => {
+const PorfolioCard = () => {
   return (
     <div className={styles.container}>
       <div className={styles.top}>
@@ -24,7 +24,7 @@ const PostCard = () => {
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book.
         </p>
-        <Link className={styles.link} href="/blog/post">
+        <Link className={styles.link} href="/portfolio/post">
           READ MORE
         </Link>
       </div>
@@ -32,4 +32,4 @@ const PostCard = () => {
   );
 };
 
-export default PostCard;
+export default PorfolioCard;

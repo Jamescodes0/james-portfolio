@@ -1,4 +1,4 @@
-import styles from "./singlePost.module.css";
+import styles from "./singlePortfolio.module.css";
 import Image from "next/image";
 
 const SinglePortfolioPage = () => {

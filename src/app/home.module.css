@@ -9,14 +9,12 @@
   flex: 1;
   position: relative;
   min-width: 950px;
+  width: 100%;
+  height: 600px;
   flex-grow: 2;
   flex-shrink: 0;
   position: relative;
   z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 .textContainer {
@@ -58,6 +56,9 @@
 }
 
 .brands {
+  display: flex;
+  align-items: center;
+  gap: 15px;
   width: 30px;
   height: 30px;
   position: relative;
@@ -68,6 +69,13 @@
 .imgContainer {
   flex: 1;
   position: relative;
+  min-width: 950px;
+  flex-grow: 2;
+  flex-shrink: 0;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .heroImg {
@@ -104,10 +112,33 @@
 }
 
 @media (max-width: 768px) {
+  .imgContainer {
+    order: -1;
+    min-width: 0;
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+  }
+
+  .heroImg {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .textContainer {
+    order: 1;
+    margin-top: 0;
+    padding-top: 20px;
+  }
+
   .title {
     font-size: 64px;
   }
+
   .brands {
-    width: 100%;
+    width: 30px;
+    height: auto;
+    margin: 0 auto;
   }
 }

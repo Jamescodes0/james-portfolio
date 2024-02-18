@@ -9,7 +9,7 @@ const Home = () => {
         <div className={styles.textContainer}>
           <h1 className={styles.title}>James Ho</h1>
           <p className={styles.desc}>
-            SOFTWARE ENGINEER, SPECIALIZING IN FRONT & BACK END DEVELOPMENT
+            SOFTWARE ENGINEER | SPECIALIZING IN FRONT & BACK END DEVELOPMENT
           </p>
           <div className={styles.buttons}>
             <Link href="/portfolio">
@@ -27,15 +27,36 @@ const Home = () => {
             >
               <Image
                 src="/linkedin.png"
-                alt=""
-                fill
+                alt="LinkedIn"
+                width={30}
+                height={30}
+                className={styles.brandImg}
+              />
+            </a>
+            <a
+              href="https://github.com/Jamescodes0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/github.png"
+                alt="GitHub"
+                width={30}
+                height={30}
                 className={styles.brandImg}
               />
             </a>
           </div>
         </div>
         <div className={styles.imgContainer}>
-          <Image src="/moonRays.png" alt="" fill className={styles.heroImg} />
+          <Image
+            src="/moonRays.png"
+            alt="Description"
+            layout="responsive"
+            width={300}
+            height={300}
+            className={styles.heroImg}
+          />
         </div>
       </div>
 

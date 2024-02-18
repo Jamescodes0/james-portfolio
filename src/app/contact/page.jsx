@@ -2,15 +2,23 @@ import styles from "./contact.module.css";
 import Image from "next/image";
 
 const Contact = () => {
+  console.log("Does it work?");
   return (
     <div className={styles.container}>
       <div className={styles.imgContainer}>
-        <Image src="/contact.png" alt="" fill />
+        <Image
+          src="/contact.png"
+          alt="Contact me"
+          layout="responsive"
+          width={500}
+          height={500}
+          objectFit="cover"
+        />
       </div>
       <div className={styles.formContainer}>
         <form action="" className={styles.form}>
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Email Address" />
+          <input type="text" placeholder="Name" required />
+          <input type="text" placeholder="Email Address" required />
           <input type="text" placeholder="Phone Number (Optional)" />
           <textarea
             name=""

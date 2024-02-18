@@ -35,7 +35,9 @@ const About = () => {
         <Image
           src="/headshot.jpg"
           alt="Picture of James"
-          fill
+          layout="fixed"
+          width={300}
+          height={300}
           className={styles.img}
         />
       </div>
