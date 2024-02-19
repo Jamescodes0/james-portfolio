@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./about.module.css";
 
 const About = () => {
+  console.log("lets check where it works");
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
