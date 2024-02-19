@@ -39,3 +39,10 @@ git add -A
 git commit -m ''
 git status
 git push origin HEAD
+
+API placeholder
+https://jsonplaceholder.typicode.com/
+
+Cloud database
+MongoDB
+https://www.mongodb.com/cloud/atlas
