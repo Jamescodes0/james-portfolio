@@ -46,10 +46,25 @@
   cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .img {
+    object-fit: cover;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
     margin-top: 30px;
+  }
+
+  .formContainer {
+    margin-top: -50px;
   }
 
   .img {

@@ -2,7 +2,7 @@
 
 import styles from "./contact.module.css";
 import Image from "next/image";
-import dynamic from "next/dynamic";
+//import dynamic from "next/dynamic";
 //import HydrationTest from "@/components/hydrationTest";
 
 /* const HydrationTestNoSSR = dynamic(() => import("@/components/hydrationTest"), {
@@ -10,8 +10,6 @@ import dynamic from "next/dynamic";
 }); */
 
 const Contact = () => {
-  const a = Math.random();
-  console.log(a);
 
   return (
     <div className={styles.container}>

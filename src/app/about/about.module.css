@@ -1,13 +1,27 @@
 .container {
   display: flex;
+  flex-direction: column; 
+  align-items: center;
   gap: 100px;
+  padding: 30px;
+  text-align: center;
 }
 
 .textContainer {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 35px;
+  max-width: 70%;
+}
+
+.imgContainer {
+  flex: 1;
+  position: relative;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .subtitle {
@@ -16,6 +30,9 @@
 
 .title {
   font-size: 54px;
+}
+.jobTitle {
+  margin: 0;
 }
 
 .desc {
@@ -40,24 +57,13 @@
   color: #00ffd1;
 }
 
-.imgContainer {
-  flex: 1;
-  position: relative;
-  height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .img {
   border-radius: 50%;
   padding: 5px;
-  box-shadow: 0 0 0 4px #22a78e;
   object-fit: cover;
   width: 300px;
   height: 300px;
-  margin-right: 100px;
-  margin-top: 50px;
+  aspect-ratio: 1 / 1;
 }
 
 @media (max-width: 768px) {
@@ -66,8 +72,26 @@
     text-align: center;
   }
 
+  .textContainer {
+    order: 1;
+    max-width: 150%;
+  }
+
   .boxes {
     flex-direction: column;
     gap: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .imgContainer {
+    flex: 1;
+    margin-top: 30px;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .img {
+    margin-right: 0;
   }
 }

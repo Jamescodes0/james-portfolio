@@ -8,7 +8,20 @@ const About = () => {
       <div className={styles.textContainer}>
         <h2 className={styles.subtitle}> About</h2>
         <h1 className={styles.title}> James Ho </h1>
-        <p className={styles.desc}>
+        <h2 className={styles.subTitle}>
+          | DEVELOPER | DESIGNER | GAMER | VISIONARY |
+          </h2>
+          <div className={styles.imgContainer}>
+        <Image
+          src="/headshot.jpg"
+          alt="Picture of James"
+          layout="fixed"
+          width={300}
+          height={300}
+          className={styles.img}
+        />
+      </div>
+        <p className={styles.desc}> 
           As a software engineer, I bring a diverse skill set and a passion for
           innovation to every project I undertake. With proficiency in languages
           such as Python, JavaScript, and SQL, along with experience in
@@ -32,16 +45,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className={styles.imgContainer}>
-        <Image
-          src="/headshot.jpg"
-          alt="Picture of James"
-          layout="fixed"
-          width={300}
-          height={300}
-          className={styles.img}
-        />
-      </div>
+      
     </div>
   );
 };
