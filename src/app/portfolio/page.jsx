@@ -1,5 +1,5 @@
-import { getPost } from "@/lib/data";
-import PortfolioCard from "../../components/portfolio/portfolioCard";
+import { getPosts } from "@/lib/data";
+import PortfolioCard from "@/components/portfolio/portfolioCard";
 import styles from "./portfolio.module.css";
 
 //FETCH DATA WITH AN API
@@ -17,7 +17,7 @@ const Portfolio = async () => {
   //const posts = await getData()
 
 //FETCH DATA WITHOUT AN API
-  const posts = await getPost()
+  const posts = await getPosts()
   return (
     <div className={styles.container}>
       {posts.map((post) => (
