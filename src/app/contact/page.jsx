@@ -10,7 +10,6 @@ import Image from "next/image";
 }); */
 
 const Contact = () => {
-
   return (
     <div className={styles.container}>
       <div className={styles.imgContainer}>
