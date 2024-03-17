@@ -1,6 +1,11 @@
 import Image from "next/image";
 import styles from "./about.module.css";
 
+export const metadata = {
+  title: "About Page",
+  description: "About description",
+};
+
 const About = () => {
   console.log("lets check where it works");
   return (
@@ -10,25 +15,26 @@ const About = () => {
         <h1 className={styles.title}> James Ho </h1>
         <h2 className={styles.subTitle}>
           | DEVELOPER | DESIGNER | GAMER | VISIONARY |
-          </h2>
-          <div className={styles.imgContainer}>
-        <Image
-          src="/headshot.jpg"
-          alt="Picture of James"
-          layout="fixed"
-          width={300}
-          height={300}
-          className={styles.img}
-        />
-      </div>
-        <p className={styles.desc}> 
+        </h2>
+        <div className={styles.imgContainer}>
+          <Image
+            src="/headshot.jpg"
+            alt="Picture of James"
+            layout="fixed"
+            width={300}
+            height={300}
+            className={styles.img}
+          />
+        </div>
+        <p className={styles.desc}>
           As a software engineer, I bring a diverse skill set and a passion for
           innovation to every project I undertake. With proficiency in languages
           such as Python, JavaScript, and SQL, along with experience in
-          frameworks like React.js and Next.js and .NET, I thrive on creating
-          efficient solutions. Beyond software development, I find joy in
-          hobbies such as hitting the gym or exploring scenic trails while
-          hiking with my Husky and wife.
+          frameworks like React.js and Next.js and .NET, and managing relational
+          database storage with MongoDB, I thrive on creating efficient
+          solutions. Beyond software development, I find joy in hobbies such as
+          hitting the gym or exploring scenic trails while hiking with my Husky
+          and wife.
         </p>
         <div className={styles.boxes}>
           <div className={styles.box}>
@@ -45,7 +51,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };

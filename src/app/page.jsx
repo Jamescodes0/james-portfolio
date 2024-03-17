@@ -68,14 +68,14 @@ const Home = () => {
           <p className={styles.desc}>
             Interactive is a placeholder for something.
           </p>
-          <div className={styles.brands}>
+          {/*  <div className={styles.brands}>
             <Image
               src="/linkedin.png"
               alt=""
               fill
               className={styles.brandImg}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </>

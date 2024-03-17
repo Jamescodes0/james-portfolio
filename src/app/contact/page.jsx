@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./contact.module.css";
 import Image from "next/image";
 //import dynamic from "next/dynamic";
@@ -8,6 +6,11 @@ import Image from "next/image";
 /* const HydrationTestNoSSR = dynamic(() => import("@/components/hydrationTest"), {
   ssr: false,
 }); */
+
+export const metadata = {
+  title: "Contact Page",
+  description: "Contact description",
+};
 
 const Contact = () => {
   return (
