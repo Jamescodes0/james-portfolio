@@ -32,9 +32,13 @@ const About = () => {
           such as Python, JavaScript, and SQL, along with experience in
           frameworks like React.js and Next.js and .NET, and managing relational
           database storage with MongoDB, I thrive on creating efficient
-          solutions. Beyond software development, I find joy in hobbies such as
-          hitting the gym or exploring scenic trails while hiking with my Husky
-          and wife.
+          solutions for each project I manage. Besides software development, my
+          10+ years as and executive assistant allowed me to gain essential
+          skills that transferred to software engineering such as meticulous
+          attention to detail and ability to manage and track all my tasks to be
+          submitted well before deadlines. In my personal life, I find joy in
+          hobbies such as hitting the gym or exploring scenic trails while
+          hiking with my Husky and wife.
         </p>
         <div className={styles.boxes}>
           <div className={styles.box}>
