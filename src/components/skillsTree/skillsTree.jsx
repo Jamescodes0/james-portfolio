@@ -199,9 +199,12 @@ const skillsData = [
 
 const SkillsTree = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.skillsTreeContainer}>
       <div className={styles.instructionText}>
-        <p>Select a node by clicking on Languages, Frameworks, or Platforms</p>
+        <p>
+          Select a skill node by clicking on Languages, Frameworks, or
+          Platforms.
+        </p>
       </div>
       <SkillProvider>
         <SkillTreeGroup>

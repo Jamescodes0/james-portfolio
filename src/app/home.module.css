@@ -1,8 +1,27 @@
 .container {
+  position: relative;
   min-height: 80vh;
   display: flex;
   gap: 50px;
   position: relative;
+}
+
+.videoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 25vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .imgContainer {
@@ -15,10 +34,11 @@
   flex-shrink: 0;
   position: relative;
   z-index: -1;
+  margin-top: 150px;
 }
 
 .textContainer {
-  margin-top: 210px;
+  margin-top: 330px;
   flex: 1;
   flex-shrink: 1;
   display: flex;
@@ -139,12 +159,13 @@
 }
 
 @media (max-width: 768px) {
+  .imgContainer,
+  .videoContainer {
+    height: 200px;
+  }
   .imgContainer {
     order: -1;
-    min-width: 0;
-    width: 100%;
-    height: 400px;
-    margin-top: 20px;
+    margin-top: 120px;
   }
 
   .heroImg {
@@ -179,6 +200,6 @@
     margin-top: -30px;
   }
   .skillTree {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }

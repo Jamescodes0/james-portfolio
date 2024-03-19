@@ -11,6 +11,12 @@ const SkillsTreeWithNoSSR = dynamic(
 const Home = () => {
   return (
     <>
+      <div className={styles.videoContainer}>
+        <video className={styles.video} autoPlay muted loop playsInline>
+          <source src="/intro.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <div className={styles.container}>
         <div className={styles.textContainer}>
           <h1 className={styles.title}>James Ho</h1>
