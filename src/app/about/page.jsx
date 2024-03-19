@@ -30,15 +30,15 @@ const About = () => {
           As a software engineer, I bring a diverse skill set and a passion for
           innovation to every project I undertake. With proficiency in languages
           such as Python, JavaScript, and SQL, along with experience in
-          frameworks like React.js and Next.js and .NET, and managing relational
-          database storage with MongoDB, I thrive on creating efficient
-          solutions for each project I manage. Besides software development, my
-          10+ years as and executive assistant allowed me to gain essential
-          skills that transferred to software engineering such as meticulous
-          attention to detail and ability to manage and track all my tasks to be
-          submitted well before deadlines. In my personal life, I find joy in
-          hobbies such as hitting the gym or exploring scenic trails while
-          hiking with my Husky and wife.
+          frameworks like React.js, Next.js and .NET as well as managing
+          relational database storage with MongoDB, I thrive on creating
+          efficient solutions for each project I manage. Besides software
+          development, my 10+ years as an executive assistant allowed me to gain
+          essential skills that transferred to software engineering such as
+          meticulous attention to detail and ability to manage and track all my
+          tasks that will be submitted well before deadlines. In my personal
+          life, I find joy in hobbies such as hitting the gym or exploring
+          scenic trails while hiking with my Husky and wife.
         </p>
         <div className={styles.boxes}>
           <div className={styles.box}>

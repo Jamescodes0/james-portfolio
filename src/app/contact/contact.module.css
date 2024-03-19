@@ -3,6 +3,7 @@
   align-items: center;
   gap: 100px;
 }
+
 .imgContainer {
   flex: 1;
   height: 500px;
@@ -17,6 +18,8 @@
 
 .formContainer {
   flex: 1;
+  max-width: 600px;
+  margin: auto;
 }
 
 .form {
@@ -33,16 +36,27 @@
   outline: none;
   background-color: var(--text);
   color: var(--bg);
+  width: 100%;
+}
+
+.form input[type="text"] {
+  max-width: 100%;
+}
+
+.form textarea {
+  height: 150px;
 }
 
 .form button {
-  padding: 20px;
+  padding: 18px;
   background-color: var(--btn);
   color: var(--bg);
   font-weight: bold;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  width: 50%;
+  margin: auto;
 }
 
 @media (max-width: 1024px) {

@@ -27,7 +27,7 @@ const RegisterForm = () => {
       />
       <button>Register</button>
       {state?.error}
-      <Link href="/login">
+      <Link href="/login" className={styles.loginLink}>
         Have an account? <b>Login</b>
       </Link>
     </form>

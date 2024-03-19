@@ -24,7 +24,7 @@
 
 .form input {
   padding: 20px;
-  background-color: var(--bg);
+  background-color: black;
   color: var(--textColor);
   border: none;
   border-radius: 5px;
@@ -38,4 +38,13 @@
   font-weight: bold;
   border: none;
   border-radius: 5px;
+}
+
+.registerLink {
+  color: black;
+  text-decoration: none;
+}
+
+.registerLink b {
+  font-weight: bold;
 }
