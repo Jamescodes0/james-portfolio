@@ -20,7 +20,7 @@ const LoginForm = () => {
       <input type="text" placeholder="username" name="username" />
       <input type="password" placeholder="password" name="password" />
       <button>Login</button>
-      {state?.error}
+      {state?.error && <div className={styles.errorMessage}>{state.error}</div>}
       <Link href="/register" className={styles.registerLink}>
         {"Don't have an account?"} <b>Register</b>
       </Link>

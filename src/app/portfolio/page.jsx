@@ -3,15 +3,10 @@ import PortfolioCard from "@/components/portfolio/portfolioCard";
 import styles from "./portfolio.module.css";
 
 //FETCH DATA WITH AN API
-const getData = async () => {
-  const res = await fetch("http://localhost:3000/api/portfolio", {
-    next: { revalidate: 3600 },
-  });
-  if (!res.ok) {
-    throw new Error("Something went wrong");
-  }
-  return res.json();
-};
+export async function loader() {
+  const posts = await getPosts();
+  return { props: { posts } };
+}
 
 const Portfolio = async () => {
   //FETCH DATA WITH AN API

@@ -202,8 +202,7 @@ const SkillsTree = () => {
     <div className={styles.skillsTreeContainer}>
       <div className={styles.instructionText}>
         <p>
-          Select a skill node by clicking on Languages, Frameworks, or
-          Platforms.
+          Select a skill node by clicking on Languages, Frameworks, or Platforms
         </p>
       </div>
       <SkillProvider>

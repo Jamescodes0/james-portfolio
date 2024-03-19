@@ -31,3 +31,8 @@
 .loginLink b {
   font-weight: bold;
 }
+
+.errorMessage {
+  color: black;
+  margin-top: 10px;
+}

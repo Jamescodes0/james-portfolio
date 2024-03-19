@@ -9,3 +9,15 @@
   font-size: 30px;
   font-weight: bold;
 }
+
+@media screen and (max-width: 1280px) {
+  .post {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .videoContainer {
+    z-index: -1;
+  }
+}
