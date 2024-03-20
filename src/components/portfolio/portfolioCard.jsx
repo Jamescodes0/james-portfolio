@@ -3,6 +3,11 @@ import styles from "./portfolioCard.module.css";
 import Link from "next/link";
 
 const PorfolioCard = ({ post }) => {
+  const displayDate = new Date(post.createdAt).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
   return (
     <div className={styles.container}>
       <div className={styles.top}>
@@ -16,7 +21,7 @@ const PorfolioCard = ({ post }) => {
             />
           </div>
         )}
-        <span className={styles.date}>01.01.2024</span>
+        <span className={styles.date}>{displayDate}</span>
       </div>
       <div className={styles.bottom}>
         <h2 className={styles.title}>{post.title}</h2>

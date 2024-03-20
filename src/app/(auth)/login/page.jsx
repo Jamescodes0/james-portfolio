@@ -3,7 +3,6 @@ import { handleGitHubLogin } from "@/lib/action";
 import styles from "./login.module.css";
 
 const Login = () => {
-  //auth?.user?.isAdmin && router.push("/")
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
