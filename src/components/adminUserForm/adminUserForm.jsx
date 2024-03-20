@@ -19,7 +19,7 @@ const AdminUserForm = () => {
         <option value="true">Yes</option>
       </select>
       <button>Add</button>
-      {state && state.error}
+      {state?.error}
     </form>
   );
 };
