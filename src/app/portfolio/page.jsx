@@ -1,19 +1,30 @@
+"use server";
 import { getPosts } from "@/lib/data";
 import PortfolioCard from "@/components/portfolio/portfolioCard";
 import styles from "./portfolio.module.css";
 
-//FETCH DATA WITH AN API
-export async function loader() {
-  const posts = await getPosts();
-  return { props: { posts } };
-}
+// FETCH DATA WITH AN API
+const getData = async () => {
+  const res = await fetch("http://localhost:3000/api/portfolio", {
+    method: "GET",
+    next: { revalidate: 3600 },
+  });
+
+  if (!res.ok) {
+    throw new Error("Something went wrong");
+  }
+
+  return res.json();
+};
 
 const Portfolio = async () => {
-  //FETCH DATA WITH AN API
-  const posts = await getPosts();
+  let posts;
+  try {
+    posts = await getPosts();
+  } catch (error) {
+    console.error("Failed to fetch posts:", error);
+  }
 
-  //FETCH DATA WITHOUT AN API
-  //const posts = await getPosts();
   return (
     <div className={styles.container}>
       {posts.map((post) => (
