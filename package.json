@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/kv": "^1.0.1",
     "bcryptjs": "^2.4.3",
     "beautiful-skill-tree": "^1.7.1",
     "install": "^0.13.0",
