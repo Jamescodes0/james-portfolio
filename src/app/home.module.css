@@ -118,13 +118,13 @@
   gap: 50px;
 }
 
-.skillsTreeContainer {
+.skillsTree {
   width: 100%;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1600px) {
   .skillsTree {
-    padding-left: 150px;
+    padding-left: 250px;
   }
 }
 
