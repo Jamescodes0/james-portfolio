@@ -40,7 +40,7 @@ const skillsData = [
             title: "C#",
             tooltip: {
               content:
-                "C# is a general-purpose high-level programming language supporting multiple paradigms. C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines and is one of the top 5 programming languages on GitHub..",
+                "C# is a general-purpose high-level programming language supporting multiple paradigms. C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines and is one of the top 5 programming languages on GitHub.",
             },
             children: [],
           },
@@ -202,7 +202,8 @@ const SkillsTree = () => {
     <div className={styles.skillsTreeContainer}>
       <div className={styles.instructionText}>
         <p>
-          Select a skill node by clicking on Languages, Frameworks, or Platforms.
+          Select a skill node by clicking on Languages, Frameworks, or
+          Platforms.
         </p>
       </div>
       <SkillProvider>
