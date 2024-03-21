@@ -72,7 +72,9 @@ const Home = () => {
         </div>
       </div>
       <div className={styles.interactiveContainer}></div>
-      <SkillsTreeWithNoSSR />
+      <div className={styles.skillsTree}>
+        <SkillsTreeWithNoSSR />
+      </div>
     </>
   );
 };

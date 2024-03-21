@@ -118,6 +118,16 @@
   gap: 50px;
 }
 
+.skillsTreeContainer {
+  width: 100%;
+}
+
+@media (max-width: 1280px) {
+  .skillsTree {
+    padding-left: 150px;
+  }
+}
+
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
@@ -153,10 +163,6 @@
 
   .buttons {
     justify-content: center;
-  }
-
-  .skillTree {
-    grid-template-columns: repeat(1, 1fr);
   }
 }
 
