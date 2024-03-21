@@ -101,10 +101,10 @@ const skillsData = [
         children: [
           {
             id: "grandchild-skill-5",
-            title: "NodeJS",
+            title: "Bootstrap",
             tooltip: {
               content:
-                "Node.js is a cross-platform, open-source JavaScript runtime environment that can run on Windows, Linux, Unix, macOS, and more. Node.js runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting.",
+                "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
             },
             children: [],
           },
@@ -184,10 +184,10 @@ const skillsData = [
         children: [
           {
             id: "grandchild-skill-9",
-            title: "Bootstrap",
+            title: "NodeJS",
             tooltip: {
               content:
-                "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
+                "Node.js is a cross-platform, open-source JavaScript runtime environment that can run on Windows, Linux, Unix, macOS, and more. Node.js runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting.",
             },
             children: [],
           },
