@@ -20,33 +20,27 @@
   color: #d1d0d0;
 }
 
-@media (max-width: 1660px) {
-  .container,
+@media (max-width: 1280px) {
+  .container {
+    margin-left: 0;
+  }
+
   .skillsTreeContainer {
     margin-top: 20px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-left: 0;
-    padding: 0 20px;
-    width: 100%;
+    padding: 0 10px;
+    width: calc(100% + 400px);
   }
 
   .skillTree {
-    max-width: 80%;
+    max-width: 70%;
     margin: 0 auto;
-    padding: 0 20px;
   }
 
   .instructionText p {
-    padding: 0 15px;
-    margin-bottom: 30px;
-  }
-
-  .heroImg,
-  .imgContainer {
-    height: auto;
-    min-width: 0;
+    padding: 0 10px;
   }
 }
 
