@@ -202,7 +202,4 @@
     display: flex;
     margin-top: -30px;
   }
-  .skillTree {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
