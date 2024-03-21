@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./portfolioCard.module.css";
 import Link from "next/link";
 
-const PorfolioCard = ({ post }) => {
+const PortfolioCard = ({ post }) => {
   const displayDate = new Date(post.createdAt).toLocaleDateString("en-US", {
     year: "numeric",
     month: "short",
@@ -34,4 +34,4 @@ const PorfolioCard = ({ post }) => {
   );
 };
 
-export default PorfolioCard;
+export default PortfolioCard;
