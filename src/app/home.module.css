@@ -1,6 +1,5 @@
 .container {
   position: relative;
-  min-height: 80vh;
   display: flex;
   gap: 50px;
 }
@@ -31,7 +30,7 @@
   flex-grow: 2;
   flex-shrink: 0;
   position: relative;
-  z-index: -1;
+  z-index: -2;
   margin-top: 210px;
 }
 
@@ -106,24 +105,28 @@
 }
 
 .skillsTree {
-  margin-top: 120px;
+  margin-top: 150px;
   width: 100%;
 }
 
 @media (max-width: 1600px) {
   .imgContainer {
-    min-width: 0;
-    width: 100%;
-    margin-top: 100px;
+    margin-top: 100;
+  }
+  .title {
+    padding-right: 100px;
+  }
+  .videoContainer {
+    height: 15vh;
   }
 
   .textContainer {
-    margin-top: 280px;
+    padding-top: 50px;
     align-items: center;
   }
 
   .buttons {
-    padding-right: 20px;
+    padding-right: 200px;
   }
 
   .skillsTree {
@@ -131,7 +134,7 @@
   }
 
   .brands {
-    padding-right: 22px;
+    padding-right: 390px;
   }
 }
 
@@ -145,12 +148,21 @@
   }
 
   .imgContainer {
-    order: -1;
     min-width: 0;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
+  .title {
+    padding-right: 0;
+  }
+
+  .textContainer {
+    padding-top: 0;
+    order: 1;
+    margin-top: -50px;
+    align-items: center;
+  }
   .button {
     order: 1;
     margin-top: 0;
@@ -158,17 +170,16 @@
     max-width: auto;
   }
 
-  .textContainer {
-    order: 1;
-    margin-top: -50px;
-    align-items: center;
-  }
   .skillsTree {
     padding-left: 0;
     margin-top: -120px;
   }
 
   .buttons {
-    justify-content: center;
+    padding-right: 0;
+  }
+
+  .brands {
+    padding-right: 0;
   }
 }
