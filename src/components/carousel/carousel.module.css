@@ -1,0 +1,89 @@
+.container {
+  --clr-primary-700: var(--btn);
+  background: var(--clr-primary-800);
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--clr-primary-100);
+  text-align: center;
+  filter: drop-shadow(0 0.5rem 1rem var(--clr-primary-700));
+  margin-top: 50px;
+}
+
+.slider {
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.slideTrack {
+  display: flex;
+  width: calc(300px * 15);
+  animation: scroll 60s linear infinite;
+}
+
+.slideTrack:hover {
+  animation-play-state: paused;
+}
+
+.slide {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5em;
+  object-fit: cover;
+  box-shadow: 0 0.5rem 1rem -0.25rem var(--btn);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.slide img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-300px * 7.5));
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.modalImageWrapper {
+  border-radius: 10px;
+  overflow: hidden;
+}

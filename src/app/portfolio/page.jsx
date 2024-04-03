@@ -2,6 +2,7 @@
 import { getPosts } from "@/lib/data";
 import PortfolioCard from "@/components/portfolio/portfolioCard";
 import styles from "./portfolio.module.css";
+import Carousel from "@/components/carousel/carousel";
 
 // FETCH DATA WITH AN API
 const getData = async () => {
@@ -26,13 +27,19 @@ const Portfolio = async () => {
   }
 
   return (
+    <>
+    <div className={styles.carousel}>
+      <Carousel/>
+    </div>
     <div className={styles.container}>
       {posts.map((post) => (
         <div className={styles.post} key={post.id}>
           <PortfolioCard post={post} />
         </div>
       ))}
+      
     </div>
+    </>
   );
 };
 

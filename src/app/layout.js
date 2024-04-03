@@ -7,10 +7,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    default: "JamesCodes0 Home",
-    template: "%s | Next.js 14",
+    default: "codeinex",
+    template: "%s | Page",
   },
-  description: "My portfolio page for all of my work.",
+  description: "The portfolio page for my work.",
 };
 
 export default function RootLayout({ children }) {

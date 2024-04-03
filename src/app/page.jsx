@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./home.module.css";
 import dynamic from "next/dynamic";
+
 const SkillsTreeWithNoSSR = dynamic(
   () => import("../components/skillsTree/skillsTree"),
   { ssr: false }
@@ -14,7 +15,7 @@ const Home = () => {
       <div className={styles.videoContainer}>
         <video className={styles.video} autoPlay muted loop playsInline>
           <source src="/intro.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          Your browser does not support the video format.
         </video>
       </div>
       <div className={styles.container}>
@@ -27,8 +28,8 @@ const Home = () => {
             <Link href="/portfolio">
               <button className={styles.button}>Portfolio</button>
             </Link>
-            <Link href="/contact">
-              <button className={styles.button}>Contact</button>
+            <Link href="/about">
+              <button className={styles.button}>About</button>
             </Link>
           </div>
           <div className={styles.brands}>
