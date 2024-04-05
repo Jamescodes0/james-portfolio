@@ -91,7 +91,9 @@
   .backgroundContainer {
     width: 100vw;
     height: 80vh;
-    margin-top: 0;
+  }
+  .textContainer {
+    margin-top: -20vh;
   }
 }
 
@@ -108,6 +110,7 @@
   .textContainer {
     order: 1;
     max-width: 150%;
+    gap: 62px;
   }
 
   .boxes {
