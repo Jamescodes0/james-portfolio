@@ -24,8 +24,8 @@
 
 .slideTrack {
   display: flex;
-  width: calc(300px * 15);
-  animation: scroll 60s linear infinite;
+  width: calc(300px * 8);
+  animation: scroll 10s linear infinite;
 }
 
 .slideTrack:hover {
@@ -61,7 +61,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-300px * 7.5));
+    transform: translateX(calc(-300px * 4));
   }
 }
 
@@ -79,11 +79,39 @@
 }
 
 .modal {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
 .modalImageWrapper {
+  margin: 0 10px;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.prevArrow,
+.nextArrow {
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgba(97, 97, 97, 0.5);
+  color: #ffffff;
+  font-size: 24px;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.prevArrow::before,
+.nextArrow::before {
+  display: inline-block;
+  border: solid white;
 }

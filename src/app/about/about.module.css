@@ -2,15 +2,36 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 100px;
   padding: 30px;
   text-align: center;
+  margin-top: -61vh;
+}
+
+.backgroundContainer {
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(65, 65, 65, 0.5);
 }
 
 .textContainer {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 30px;
   max-width: 70%;
 }
 
@@ -30,6 +51,7 @@
 .title {
   font-size: 54px;
 }
+
 .jobTitle {
   margin: 0;
 }
@@ -69,6 +91,10 @@
   .container {
     flex-direction: column;
     text-align: center;
+  }
+
+  .backgroundContainer {
+    margin-top: 0;
   }
 
   .textContainer {

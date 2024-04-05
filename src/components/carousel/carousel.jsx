@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "./carousel.module.css";
 
 const Carousel = () => {
-  const [modalImage, setModalImage] = useState(null);
+  const [modalImageIndex, setModalImageIndex] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const images = [
@@ -17,20 +17,8 @@ const Carousel = () => {
       alt: "Successfully added a Rating",
     },
     {
-      src: "/Ratings3.png",
-      alt: "Successfully deleted a Rating",
-    },
-    {
       src: "/discountAdmin1.png",
       alt: "Discount Table",
-    },
-    {
-      src: "/discountAdmin2.png",
-      alt: "Discount filter buttons",
-    },
-    {
-      src: "/discountAdmin3.png",
-      alt: "Discounts filtered",
     },
     {
       src: "/discountAdmin4.png",
@@ -41,22 +29,30 @@ const Carousel = () => {
       alt: "Edit existing Discount",
     },
     {
-      src: "/discountAdmin6.png",
-      alt: "Discount deleted successfully",
+      src: "/UE1.png",
+      alt: "Unreal Engine Char",
     },
     {
-      src: "/discountAdmin7.png",
-      alt: "Discount updated successfully",
-    },
-    {
-      src: "/discountAdmin8.png",
-      alt: "Discount created successfully",
+      src: "/UE2.png",
+      alt: "Unreal Engine Map",
     },
   ];
 
-  const handleImageClick = (src, alt) => {
-    setModalImage({ src, alt });
+  const handleImageClick = (index) => {
+    setModalImageIndex(index);
     setIsModalOpen(true);
+  };
+
+  const nextImage = () => {
+    setModalImageIndex((currentIndex) =>
+      currentIndex === images.length - 1 ? 0 : currentIndex + 1
+    );
+  };
+
+  const previousImage = () => {
+    setModalImageIndex((currentIndex) =>
+      currentIndex === 0 ? images.length - 1 : currentIndex - 1
+    );
   };
 
   return (
@@ -69,7 +65,7 @@ const Carousel = () => {
               <li
                 key={index}
                 className={styles.slide}
-                onClick={() => handleImageClick(image.src, image.alt)}
+                onClick={() => handleImageClick(index)}
               >
                 <Image
                   src={image.src}
@@ -87,16 +83,24 @@ const Carousel = () => {
           className={styles.modalOverlay}
           onClick={() => setIsModalOpen(false)}
         >
-          <div className={styles.modal}>
-            <div className={styles.modalImageWrapper}>
-              <Image
-                src={modalImage.src}
-                alt={modalImage.alt}
-                width={800}
-                height={600}
-                layout="responsive"
-              />
-            </div>
+          <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
+            <button className={styles.prevArrow} onClick={previousImage}>
+              &lt;
+            </button>
+            {modalImageIndex !== null && (
+              <div className={styles.modalImageWrapper}>
+                <Image
+                  src={images[modalImageIndex].src}
+                  alt={images[modalImageIndex].alt}
+                  width={800}
+                  height={600}
+                  layout="responsive"
+                />
+              </div>
+            )}
+            <button className={styles.nextArrow} onClick={nextImage}>
+              &gt;
+            </button>
           </div>
         </div>
       )}

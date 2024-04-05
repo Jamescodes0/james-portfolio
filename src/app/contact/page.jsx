@@ -1,3 +1,4 @@
+/*
 import styles from "./contact.module.css";
 import Image from "next/image";
 
@@ -33,3 +34,4 @@ const Contact = () => {
 };
 
 export default Contact;
+*/
