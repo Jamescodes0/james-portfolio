@@ -110,7 +110,7 @@
   .textContainer {
     order: 1;
     max-width: 150%;
-    gap: 20px;
+    gap: 10px;
   }
 
   .boxes {
