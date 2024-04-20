@@ -47,7 +47,7 @@ const About = () => {
           </p>
           <div className={styles.boxes}>
             <div className={styles.box}>
-              <h1> 1+ </h1>
+              <h1> 2+ </h1>
               <p>Years of experience</p>
             </div>
             <div className={styles.box}>
